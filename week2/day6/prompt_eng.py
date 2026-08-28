@@ -24,18 +24,25 @@ def llm_ans(prompt):
     return ans
 
 bad_prompt ="""
+
 #ROLE : 
 You are a support assistance at a mobile/laptop company
+
 #TASK:
 You have to classify the issue in a category 
+
 #CONSTRAINT
 You have to classify the issue in one of three categories namely billing, technical, return
+
 # OUTPUT FORMAT
 Your answer should be in one word only.The one word should be one if hte categories givenin constraints
+
 #EXAMPLE:
 For instance if a user complain says he wants a refund than the category is Return
+
 #FALLBACK
 If  the issue is unrelated to any of the categories mentioned in constraints, then the answer should be OTHER
+
 This is a user complaint:
 my laptop is not working
 """
